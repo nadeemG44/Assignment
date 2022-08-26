@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[TEST-CASE-01 failed: Before-sorted elements compaired]]>
+    </line>
+    <line>
+      <![CDATA[TEST-CASE-02 failed: Non-sorted elements compared with  Sorted-Elements ]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="23633" started-at="2022-08-16T21:42:14 IST" finished-at="2022-08-16T21:42:37 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="23633" started-at="2022-08-16T21:42:14 IST" finished-at="2022-08-16T21:42:37 IST">
+      <class name="com.testClasses.SortBy_productName">
+        <test-method status="PASS" signature="objInitialization()[pri:0, instance:com.testClasses.SortBy_productName@12f41634]" name="objInitialization" is-config="true" duration-ms="7453" started-at="2022-08-16T21:42:14 IST" finished-at="2022-08-16T21:42:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- objInitialization -->
+        <test-method status="FAIL" signature="SortByProductName()[pri:0, instance:com.testClasses.SortBy_productName@12f41634]" name="SortByProductName" duration-ms="4791" started-at="2022-08-16T21:42:21 IST" finished-at="2022-08-16T21:42:26 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.testClasses.SortBy_productName.SortByProductName(SortBy_productName.java:108)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[TEST-CASE-01 failed: Before-sorted elements compaired]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- SortByProductName -->
+        <test-method status="PASS" signature="checkFailTestCase(org.testng.ITestResult)[pri:0, instance:com.testClasses.SortBy_productName@12f41634]" name="checkFailTestCase" is-config="true" duration-ms="256" started-at="2022-08-16T21:42:26 IST" finished-at="2022-08-16T21:42:26 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SortByProductName status=FAILURE method=SortBy_productName.SortByProductName()[pri:0, instance:com.testClasses.SortBy_productName@12f41634] output=TEST-CASE-01 failed: Before-sorted elements compaired]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFailTestCase -->
+        <test-method status="PASS" signature="objInitialization()[pri:0, instance:com.testClasses.SortBy_productName@12f41634]" name="objInitialization" is-config="true" duration-ms="7142" started-at="2022-08-16T21:42:26 IST" finished-at="2022-08-16T21:42:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- objInitialization -->
+        <test-method status="FAIL" signature="SortByProductPrice()[pri:1, instance:com.testClasses.SortBy_productName@12f41634]" name="SortByProductPrice" duration-ms="3735" started-at="2022-08-16T21:42:33 IST" finished-at="2022-08-16T21:42:37 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.testClasses.SortBy_productName.SortByProductPrice(SortBy_productName.java:170)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[TEST-CASE-02 failed: Non-sorted elements compared with  Sorted-Elements ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- SortByProductPrice -->
+        <test-method status="PASS" signature="checkFailTestCase(org.testng.ITestResult)[pri:0, instance:com.testClasses.SortBy_productName@12f41634]" name="checkFailTestCase" is-config="true" duration-ms="215" started-at="2022-08-16T21:42:37 IST" finished-at="2022-08-16T21:42:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SortByProductPrice status=FAILURE method=SortBy_productName.SortByProductPrice()[pri:1, instance:com.testClasses.SortBy_productName@12f41634] output=TEST-CASE-02 failed: Non-sorted elements compared with  Sorted-Elements ]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFailTestCase -->
+      </class> <!-- com.testClasses.SortBy_productName -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
