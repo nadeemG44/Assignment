@@ -10,6 +10,8 @@ public class ShopBy_category
 	@FindBy(xpath="(//select[@id='sorter'])[1]") private WebElement sortBy;
 //	@FindBy(xpath="//a[@class='product-item-link']") private WebElement allElements;
 	
+	
+	//constructor
 	public ShopBy_category(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
