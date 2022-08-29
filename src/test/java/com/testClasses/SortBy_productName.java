@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -47,26 +48,23 @@ public class SortBy_productName extends BaseClass {
 		  TCID="102";
 		  Reporter.log("TEST-CASE-01 failed: Before-sorted elements compaired");
 	  
-		  	List<String> raisa = utility.sortByProductName(driver);
-		  	Collections.sort(raisa);
-		  	/*String string = raisa.get(0);
-		  	String string2 = raisa.get(1);*/
-		  		Assert.assertTrue(raisa.get(0).equals(raisa.get(1)));
+		  	List<String> productByName = utility.sortByProductName(driver);
+		  	Collections.sort(productByName);
+		  	
+		  		Assert.assertTrue(productByName.get(0).equals(productByName.get(1)));
 	  }
 	  
 	  
     @Test(priority=1)
-	public void SortByProductPrice() 
+    public void SortByProductPrice() 
 	{
 		 TCID="103";
 	     Reporter.log("TEST-CASE-02 failed: Non-sorted elements compared with  Sorted-Elements ");
 		  
-		
-    	List<String> raisa = utility.sortByProductPrice(driver);
-	  Collections.sort(raisa);
-	  	String string = raisa.get(0);
-	  	String string2 = raisa.get(1);
-	  		Assert.assertTrue(string.equals(string2));
+		 List<String> productByPrice = utility.sortByProductPrice(driver);
+	     Collections.sort(productByPrice);
+	  	
+	  		Assert.assertTrue(productByPrice.get(0).equals(productByPrice.get(1)));
 	}
     
     

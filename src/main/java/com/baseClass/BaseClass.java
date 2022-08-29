@@ -14,7 +14,7 @@ public class BaseClass
 	
 	public WebDriver launchBrowser()
 	{
-		System.setProperty("webdriver.chrome.driver",UrlConfig.driverPath);
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+UrlConfig.driverPath);
 		driver=new ChromeDriver();
 		driver.get(UrlConfig.url);
 		driver.manage().window().fullscreen();

@@ -2,11 +2,19 @@ package com.utility;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.support.ui.Select;
 
 public class Utility
 {
@@ -57,7 +65,7 @@ public class Utility
 		 			e.getMessage();
 		 			}   
 		 
-        List<String> list=new ArrayList<>();
+        List<String> list=new ArrayList<String>();
 		  	list.addAll(li);
 		  	list.addAll(li1);
 		  	
@@ -70,7 +78,7 @@ public class Utility
 	public List<String> sortByProductPrice(WebDriver driver)
 	{
 		List<WebElement> beforeSort = driver.findElements(By.xpath("//span[@class='special-price']//span[@class='price']"));
-		List<String> li=new ArrayList<>();
+		List<String> li=new ArrayList<String>();
 
 		for (WebElement bf : beforeSort) 
  		{
@@ -83,7 +91,7 @@ public class Utility
 		
 		
 		
-		List<String> li1=new ArrayList<>();
+		List<String> li1=new ArrayList<String>();
 		try {
 			WebElement sortBy1=driver.findElement(By.xpath("(//select[@id='sorter'])[1]"));
 		     Select s=new Select(sortBy1); 
@@ -104,7 +112,7 @@ public class Utility
 					e.getMessage();
 				}
 		
-		List<String> list=new ArrayList<>();
+		List<String> list=new ArrayList<String>();
 	  	list.addAll(li);
 	  	list.addAll(li1);
 		
