@@ -23,7 +23,7 @@ public class Utility
 	public static void captureScreenshot(WebDriver drive,String tcID) throws IOException
 	{
 		File src=((TakesScreenshot)drive).getScreenshotAs(OutputType.FILE);
-		File desti=new File(com.urlConfiguration.UrlConfig.screenShots+tcID+"_Image.jpg");
+		File desti=new File(System.getProperty("user.dir")+com.urlConfiguration.UrlConfig.screenShots+tcID+"_Image.jpg");
 		FileHandler.copy(src, desti);
 	}
 
